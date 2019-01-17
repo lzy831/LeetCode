@@ -2,6 +2,7 @@
 #define __BASE_LIST_HPP__
 #include <vector>
 #include <iostream>
+using namespace std;
 
 // Definition for singly-linked list.
 struct ListNode
@@ -53,7 +54,9 @@ ListNode* FindFirstVal(ListNode* head, int val)
 ListNode* FindListTail(ListNode* head)
 {
   if(!head)
-  return nullptr;
+  {
+    return nullptr;
+  }
 
   ListNode* p = head;
   while(p->next)

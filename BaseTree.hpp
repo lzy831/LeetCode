@@ -18,9 +18,6 @@ struct TreeNode
 };
 
 
-
-
-
 void CreateTree(TreeNode** root, queue<int>& nodelist)
 {
   if(nodelist.size())
@@ -37,6 +34,15 @@ void CreateTree(TreeNode** root, queue<int>& nodelist)
   }
 }
 
+void CreateTree(TreeNode** root, vector<int>& v)
+{
+  queue<int> q;
+  for(auto & i : v)
+  {
+    q.push(i);
+  }
+  CreateTree(root, q);
+}
 
 // 递归前序
 void TraverseTreePreorder(TreeNode* root, queue<int>& travlist)
@@ -44,14 +50,20 @@ void TraverseTreePreorder(TreeNode* root, queue<int>& travlist)
   if(root)
   {
     travlist.push(root->val);
+    // cout << root->val << " ";
     TraverseTreePreorder(root->left, travlist);
     TraverseTreePreorder(root->right, travlist);
   }
   else
   {
-    travlist.push(-1);
+    // travlist.push(-1);
   }
-
+}
+void TraverseTreePreorder(TreeNode* root)
+{
+  queue<int> q;
+  TraverseTreePreorder(root, q);
+  DebugQueue(q);
 }
 
 // 递归中序
@@ -61,14 +73,20 @@ void TraverseTreeInorder(TreeNode* root, queue<int>& travlist)
   {
     TraverseTreeInorder(root->left, travlist);
     travlist.push(root->val);
+    // cout << root->val << " ";
     TraverseTreeInorder(root->right, travlist);
   }
   else
   {
-    travlist.push(-1);
+    // travlist.push(-1);
   }
 }
-
+void TraverseTreeInorder(TreeNode* root)
+{
+  queue<int> q;
+  TraverseTreeInorder(root, q);
+  DebugQueue(q);
+}
 
 
 

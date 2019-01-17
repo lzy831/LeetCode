@@ -1,11 +1,13 @@
-// 189. 旋转数组
+// 189. æ—‹è½¬æ•°ç»„
 #include "BaseHeader.hpp"
 
-class Solution {
+class Solution
+{
 public:
-    void rotate(vector<int>& nums, int k) {
-        int real_k = k % nums.size();
-    }
+  void rotate(vector<int>& nums, int k)
+  {
+    int real_k = k % nums.size();
+  }
 };
 
 int main()
@@ -21,7 +23,7 @@ int main()
   v.push_back(7);
 
   s.rotate(v, 20);
-  
+
   DebugVector(v);
   return 0;
 }

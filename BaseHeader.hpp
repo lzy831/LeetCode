@@ -10,10 +10,6 @@
 #include <unordered_set>
 using namespace std;
 
-#include "BaseList.hpp"
-#include "BaseTree.hpp"
-
-
 template <typename T>
 void DebugVector(vector<T>& v)
 {
@@ -23,5 +19,19 @@ void DebugVector(vector<T>& v)
   }
   cout << endl;
 }
+
+template <typename T>
+void DebugQueue(queue<T>& q)
+{
+  while(!q.empty())
+  {
+    cout << q.front() << " ";
+    q.pop();
+  }
+  cout << endl;
+}
+
+#include "BaseList.hpp"
+#include "BaseTree.hpp"
 
 #endif
