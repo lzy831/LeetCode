@@ -43,12 +43,17 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -g -O0")
 # add_executable(DynamicProgramming_4_rob_T198 DynamicProgramming_4_rob_T198.cpp)
 
 # 初级算法 - 其他
-add_executable(Other_1_hammingWeight_T191 Other_1_hammingWeight_T191.cpp)
-add_executable(Other_2_hammingDistance_T461 Other_2_hammingDistance_T461.cpp)
-add_executable(Other_3_reverseBits_T190 Other_3_reverseBits_T190.cpp)
-add_executable(Other_4_generate_T118 Other_4_generate_T118.cpp)
-add_executable(Other_5_isValid_T20 Other_5_isValid_T20.cpp)
-add_executable(Other_6_missingNumber_T268 Other_6_missingNumber_T268.cpp)
+# add_executable(Other_1_hammingWeight_T191 Other_1_hammingWeight_T191.cpp)
+# add_executable(Other_2_hammingDistance_T461 Other_2_hammingDistance_T461.cpp)
+# add_executable(Other_3_reverseBits_T190 Other_3_reverseBits_T190.cpp)
+# add_executable(Other_4_generate_T118 Other_4_generate_T118.cpp)
+# add_executable(Other_5_isValid_T20 Other_5_isValid_T20.cpp)
+# add_executable(Other_6_missingNumber_T268 Other_6_missingNumber_T268.cpp)
+
+# 初级算法 - 数学
+add_executable(Math_1_FizzBuzz_T412 Math_1_FizzBuzz_T412.cpp)
+add_executable(Math_2_countPrimes_T204 Math_2_countPrimes_T204.cpp)
+
 
 # 排序
 # add_executable(QuikSort QuikSort.cpp)
