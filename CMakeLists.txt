@@ -4,19 +4,20 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -g -O0")
 
 
 # 初级算法 - 数组
-# add_executable(Array_1_removeDuplicates Array_1_removeDuplicates.cpp)
-# add_executable(Array_3_rotate Array_3_rotate.cpp)
-# add_executable(Array_4_containsDuplicate Array_4_containsDuplicate.cpp)
-# add_executable(Array_5_singleNumber Array_5_singleNumber.cpp)
-# add_executable(Array_7_plusOne Array_7_plusOne.cpp)
-# add_executable(Array_8_moveZeroes Array_8_moveZeroes.cpp)
-# add_executable(Array_10_rotateImage Array_10_rotateImage.cpp)
+# add_executable(Array_1_removeDuplicates_T26 Array_1_removeDuplicates_T26.cpp)
+# add_executable(Array_3_rotate_T189 Array_3_rotate_T189.cpp)
+# add_executable(Array_4_containsDuplicate_T217 Array_4_containsDuplicate_T217.cpp)
+# add_executable(Array_5_singleNumber_T136 Array_5_singleNumber_T136.cpp)
+# add_executable(Array_7_plusOne_T66 Array_7_plusOne_T66.cpp)
+# add_executable(Array_8_moveZeroes_T283 Array_8_moveZeroes_T283.cpp)
+# add_executable(Array_10_rotateImage_T48 Array_10_rotateImage_T48.cpp)
+
 
 # 初级算法 - 链表
-# add_executable(List_1_deleteNode List_1_deleteNode.cpp)
-# add_executable(List_2_removeNthFromEnd List_2_removeNthFromEnd.cpp)
-# add_executable(List_4_mergeTwoLists List_4_mergeTwoLists.cpp)
-# add_executable(List_5_isPalindrome List_5_isPalindrome.cpp)
+# add_executable(List_1_deleteNode_T237 List_1_deleteNode_T237.cpp)
+# add_executable(List_2_removeNthFromEnd_T19 List_2_removeNthFromEnd_T19.cpp)
+# add_executable(List_4_mergeTwoLists_T21 List_4_mergeTwoLists_T21.cpp)
+# add_executable(List_5_isPalindrome_T234 List_5_isPalindrome_T234.cpp)
 
 # 初级算法 - 排序和搜索
 # add_executable(SortAndSearch_1_merge SortAndSearch_1_merge.cpp)
@@ -26,10 +27,10 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -g -O0")
 # add_executable(Design_2_minStack Design_2_minStack.cpp)
 
 # 初级算法 - 字符串
-# add_executable(String_1_reverseString String_1_reverseString.cpp)
-# add_executable(String_3_firstUniqChar String_3_firstUniqChar.cpp)
-# add_executable(String_4_isAnagram String_4_isAnagram.cpp)
-# add_executable(String_9_longestCommonPrefix String_9_longestCommonPrefix.cpp)
+# add_executable(String_1_reverseString_T344 String_1_reverseString_T344.cpp)
+# add_executable(String_3_firstUniqChar_T387 String_3_firstUniqChar_T387.cpp)
+# add_executable(String_4_isAnagram_T242 String_4_isAnagram_T242.cpp)
+# add_executable(String_9_longestCommonPrefix_T14 String_9_longestCommonPrefix_T14.cpp)
 
 # 初级算法 - 树
 # add_executable(Tree_1_maxDepth_T104 Tree_1_maxDepth_T104.cpp)
@@ -64,6 +65,7 @@ add_executable(Math_2_countPrimes_T204 Math_2_countPrimes_T204.cpp)
 # add_executable (T2 T2.cpp)
 # add_executable (T9 T9.cpp)
 # add_executable (T28 T28.cpp)
+add_executable (T59 T59.cpp)
 # add_executable (T83 T83.cpp)
 # add_executable (T94 T94.cpp)
 # add_executable (T106 T106.cpp)

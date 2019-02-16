@@ -1,4 +1,4 @@
-// 反转字符串
+// 344. 反转字符串
 // 编写一个函数，其作用是将输入的字符串反转过来。
 // 示例 1:
 // 输入: "hello"
@@ -12,19 +12,19 @@
 class Solution
 {
 public:
+  // 思路：
+  // begin和end两个指针，从两端向中间遍历并交换元素
   string reverseString(string s)
   {
-    if( s.empty())
-    {
+    if (s.empty()) {
       return s;
     }
-    
+
     string res = s;
     int begin = 0;
     int end = res.size() - 1;
 
-    while(begin < end)
-    {
+    while (begin < end) {
       char tmp = res[begin];
       res[begin] = res[end];
       res[end] = tmp;

@@ -1,12 +1,11 @@
-// 有效的字母异位词
+// 242. 有效的字母异位词
 // 给定两个字符串 s 和 t ，编写一个函数来判断 t 是否是 s 的一个字母异位词。
 
 // 示例 1:
-
 // 输入: s = "anagram", t = "nagaram"
 // 输出: true
-// 示例 2:
 
+// 示例 2:
 // 输入: s = "rat", t = "car"
 // 输出: false
 // 说明:
@@ -20,29 +19,26 @@
 class Solution
 {
 public:
+  // 思路：
+  // 两个ASCII码小hash表统计并比较
   bool isAnagram(string s, string t)
   {
     int a[26];
     int b[26];
-    for(int i = 0; i < 26; i++)
-    {
+    for (int i = 0; i < 26; i++) {
       a[i] = 0;
       b[i] = 0;
     }
 
-    for(auto & i : s)
-    {
+    for (auto& i : s) {
       a[i - 'a']++;
     }
-    for(auto & i : t)
-    {
+    for (auto& i : t) {
       b[i - 'a']++;
     }
 
-    for(int i = 0; i < 26; i++)
-    {
-      if(a[i] != b[i])
-      {
+    for (int i = 0; i < 26; i++) {
+      if (a[i] != b[i]) {
         return false;
       }
     }

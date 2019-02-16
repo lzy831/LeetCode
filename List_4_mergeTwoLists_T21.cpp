@@ -1,4 +1,4 @@
-//  合并两个有序链表
+// 21. 合并两个有序链表
 // 将两个有序链表合并为一个新的有序链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。
 // 示例：
 // 输入：1->2->4, 1->3->4
@@ -13,38 +13,27 @@ public:
     ListNode* res = nullptr;
     ListNode* res_tail = nullptr;
 
-    if(l1 == nullptr && l2 == nullptr)
-    {
+    if (l1 == nullptr && l2 == nullptr) {
       return res;
     }
 
     ListNode* p1 = l1;
     ListNode* p2 = l2;
 
-    while(p1 && p2)
-    {
-      if(p1->val < p2->val)
-      {
+    while (p1 && p2) {
+      if (p1->val < p2->val) {
 
-        if(res == nullptr)
-        {
+        if (res == nullptr) {
           res = res_tail = p1;
-        }
-        else
-        {
+        } else {
           res_tail->next = p1;
           res_tail = res_tail->next;
         }
         p1 = p1->next;
-      }
-      else
-      {
-        if(res == nullptr)
-        {
+      } else {
+        if (res == nullptr) {
           res = res_tail = p2;
-        }
-        else
-        {
+        } else {
           res_tail->next = p2;
           res_tail = res_tail->next;
         }
@@ -52,26 +41,17 @@ public:
       }
     }
 
-    if(p1)
-    {
-      if(res == nullptr)
-      {
+    if (p1) {
+      if (res == nullptr) {
         res = p1;
-      }
-      else
-      {
+      } else {
         res_tail->next = p1;
       }
 
-    }
-    else
-    {
-      if(res == nullptr)
-      {
+    } else {
+      if (res == nullptr) {
         res = p2;
-      }
-      else
-      {
+      } else {
         res_tail->next = p2;
       }
     }

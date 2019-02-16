@@ -1,3 +1,4 @@
+// 283. 移动零
 // 给定一个数组 nums，编写一个函数将所有 0 移动到数组的末尾，同时保持非零元素的相对顺序。
 // 示例:
 // 输入: [0,1,0,3,12]
@@ -7,20 +8,17 @@
 // 尽量减少操作次数。
 #include "BaseHeader.hpp"
 
-
-
 class Solution
 {
 public:
   void moveZeroes(vector<int>& nums)
   {
+    // 思路：
     // last 记录遍历过程中，最后一个非0值的位置
     // 顺序遍历，只要发现非0的，就换到前面来
     int last = 0;
-    for(int i = 0; i < nums.size(); i++)
-    {
-      if(nums[i] != 0)
-      {
+    for (int i = 0; i < nums.size(); i++) {
+      if (nums[i] != 0) {
         // swap(nums[i],nums[last]);
 
         // last++;
@@ -31,8 +29,7 @@ public:
         nums[last++] = nums[i];
       }
     }
-    while(last < nums.size())
-    {
+    while (last < nums.size()) {
       nums[last++] = 0;
     }
   }

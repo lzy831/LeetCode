@@ -1,15 +1,15 @@
+// 189. 旋转数组
 // 给定一个数组，将数组中的元素向右移动 k 个位置，其中 k 是非负数。
 
 // 示例 1:
-
 // 输入: [1,2,3,4,5,6,7] 和 k = 3
 // 输出: [5,6,7,1,2,3,4]
 // 解释:
 // 向右旋转 1 步: [7,1,2,3,4,5,6]
 // 向右旋转 2 步: [6,7,1,2,3,4,5]
 // 向右旋转 3 步: [5,6,7,1,2,3,4]
-// 示例 2:
 
+// 示例 2:
 // 输入: [-1,-100,3,99] 和 k = 2
 // 输出: [3,99,-1,-100]
 // 解释:
@@ -23,32 +23,34 @@
 
 class Solution
 {
+
 public:
+  // 思路:
+  // 假设共有N个元素，则先将前N-k个元素翻转，再将后面元素翻转，最后全部元素翻转
+  // [1,2,3,4,5,6,7] N=7,k=3
+  // -> [4,3,2,1,7,6,5]
+  // -> [5,6,7,1,2,3,4]
   void rotate(vector<int>& nums, int k)
   {
-    if(nums.size() < 1)
-    {
+    if (nums.size() < 1) {
       return ;
     }
     k = k % nums.size();
 
-    if(k != 0)
-    {
-      reverse(nums, 0, nums.size() - k -1);
-      reverse(nums, nums.size() - k , nums.size()-1);
-      reverse(nums, 0, nums.size()-1);
+    if (k != 0) {
+      reverse(nums, 0, nums.size() - k - 1);
+      reverse(nums, nums.size() - k, nums.size() - 1);
+      reverse(nums, 0, nums.size() - 1);
     }
   }
 
   void reverse(vector<int>& nums, int begin, int end)
   {
-    if(begin == end)
-    {
+    if (begin == end) {
       return ;
     }
 
-    while(begin < end)
-    {
+    while (begin < end) {
       int tmp = nums[begin];
       nums[begin] = nums[end];
       nums[end] = tmp;

@@ -1,3 +1,4 @@
+// 66. 加一
 // 给定一个由整数组成的非空数组所表示的非负整数，在该数的基础上加一。
 // 最高位数字存放在数组的首位， 数组中每个元素只存储一个数字。
 // 你可以假设除了整数 0 之外，这个整数不会以零开头。
@@ -11,10 +12,6 @@
 // 解释: 输入数组表示数字 4321。
 #include "BaseHeader.hpp"
 
-
-
-
-
 class Solution
 {
 public:
@@ -24,31 +21,26 @@ public:
     stack<int> s;
     int of = 0;
 
-    for(int i = digits.size() - 1; i >= 0; i--)
-    {
+    for (int i = digits.size() - 1; i >= 0; i--) {
       int tmp = digits[i];
-      if(i == digits.size() - 1)
-      {
+      if (i == digits.size() - 1) {
         tmp++;
       }
 
-      if(tmp + of > 9)
-      {
+      if (tmp + of > 9) {
         s.push((tmp + of) % 10);
         of = 1;
-      }
-      else
-      {
-        s.push(tmp+of);
+      } else {
+        s.push(tmp + of);
         of = 0;
       }
     }
-    if(of)
-    {
+
+    if (of) {
       res.push_back(1);
     }
-    while(!s.empty())
-    {
+
+    while (!s.empty()) {
       res.push_back(s.top());
       s.pop();
     }
