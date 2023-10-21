@@ -8,7 +8,7 @@
         "name": "(gdb) Launch current file",
         "type": "cppdbg",
         "request": "launch",
-        "program": "${workspaceFolder}/2023/build/T27",
+        "program": "${workspaceFolder}/build/${fileBasenameNoExtension}",
         "args": [],
         "stopAtEntry": false,
         "cwd": "${workspaceFolder}",
