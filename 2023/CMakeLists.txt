@@ -58,13 +58,19 @@ include_directories(base)
 # T9.cpp)
 add_executable(T26 T26.cc)
 add_executable(T27 T27.cc)
-# add_executable (T28 T28.cpp) add_executable (T59 T59.cpp)
+# add_executable (T28 T28.cpp) 
+# add_executable (T59 T59.cpp)
 add_executable(T80 T80.cc)
-# add_executable (T83 T83.cpp) add_executable (T88 T88.cc)
+# add_executable (T83 T83.cpp) 
+# add_executable (T88 T88.cc)
 
-# add_executable (T94 T94.cpp) add_executable (T106 T106.cpp) add_executable
-# (T107 T107.cpp) add_executable (T121 T121.cpp) add_executable (T122 T122.cpp)
-# add_executable (T125 T125.cpp) add_executable (T141 T141.cpp) add_executable
+# add_executable (T94 T94.cpp) 
+# add_executable (T106 T106.cpp) 
+# add_executable(T107 T107.cpp) 
+add_executable (T121 T121.cc) 
+# add_executable (T122 T122.cpp)
+# add_executable (T125 T125.cpp) 
+# add_executable (T141 T141.cpp) add_executable
 add_executable(T169 T169.cc)
 
 # (T203 T203.cpp) add_executable (T206 T206.cpp) add_executable (T442 T442.cpp)
