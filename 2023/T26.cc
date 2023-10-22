@@ -1,5 +1,8 @@
 #include "BaseHeader.h"
 
+// 思路： 2个指针，指针A 记录正向第一个不重复的最大值位置， 指针B为主遍历指针，轮询时如果发现有比当前指针A值大的，就把A+1赋值为这个大的值
+// 主要是注意指针移动和处理的细节步骤上
+
 class Solution {
  public:
   int removeDuplicates(vector<int>& nums) {
