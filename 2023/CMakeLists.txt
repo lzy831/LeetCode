@@ -70,7 +70,7 @@ add_executable(T80 T80.cc)
 # add_executable (T106 T106.cpp)
 # add_executable(T107 T107.cpp)
 add_executable(T121 T121.cc)
-
+add_executable(T122 T122.cc)
 # add_executable (T122 T122.cpp)
 # add_executable (T125 T125.cpp)
 # add_executable (T141 T141.cpp) add_executable
