@@ -54,12 +54,12 @@ include_directories(base)
 
 # 排序 add_executable(QuikSort QuikSort.cc)
 
-# add_executable (T1 T1.cc) 
-# add_executable (T2 T2.cc) 
+# add_executable (T1 T1.cc)
+# add_executable (T2 T2.cc)
 # add_executable (T9 T9.cc)
-add_executable (T12 T12.cc)
-add_executable (T13 T13.cc)
-add_executable (T14 T14.cc)
+add_executable(T12 T12.cc)
+add_executable(T13 T13.cc)
+add_executable(T14 T14.cc)
 add_executable(T26 T26.cc)
 add_executable(T28 T28.cc)
 add_executable(T27 T27.cc)
@@ -67,7 +67,8 @@ add_executable(T27 T27.cc)
 # add_executable (T28 T28.cc)
 add_executable(T42 T42.cc)
 add_executable(T55 T55.cc)
-add_executable (T58 T58.cc)
+add_executable(T58 T58.cc)
+
 # add_executable (T59 T59.cc)
 add_executable(T80 T80.cc)
 
@@ -77,9 +78,11 @@ add_executable(T80 T80.cc)
 # add_executable (T94 T94.cc)
 # add_executable (T106 T106.cc)
 add_executable(T102 T102.cc)
+
 # add_executable(T107 T107.cc)
 add_executable(T121 T121.cc)
 add_executable(T122 T122.cc)
+
 # add_executable (T122 T122.cc)
 # add_executable (T125 T125.cc)
 # add_executable (T141 T141.cc) add_executable
@@ -87,6 +90,8 @@ add_executable(T169 T169.cc)
 add_executable(T189 T189.cc)
 
 # add_executable (T203 T203.cc)
+add_executable(T274 T274.cc)
+
 # add_executable (T206 T206.cc)
 # add_executable (T442 T442.cc)
 # add_executable (T876 T876.cc)
