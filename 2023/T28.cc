@@ -1,25 +1,32 @@
 #include "BaseHeader.h"
-
 class Solution {
  public:
-  int lengthOfLastWord(string s) {
-    int len = 0;
-    for (int i = s.length() - 1; i >= 0; i--) {
-      if ( (s[i] >= 'a' && s[i] <= 'z') || s[i] >= 'A' && s[i] <= 'Z') {
-        len++;
+  int strStr(string haystack, string needle) {
+    if (needle.empty() || haystack.empty()) {
+      return -1;
+    }
+
+    int i;
+    for (int cur = 0; cur + needle.size() <= haystack.size(); cur++) {
+      for (i = 0; i < needle.size(); i++) {
+        if (haystack[cur + i] != needle[i]) {
+          break;
+        }
       }
-      if (s[i] == ' ' && len > 0) {
-        break;
+      if (i == needle.size()) {
+        return cur;
       }
     }
-    return len;
+    return -1;
   }
 };
 
 int main() {
-  Solution s;
-  std::string input("luffy is still joyboy ");
+  string haystack = "1111s1adbuts1ad";
+  string needle = "sad";
 
-  cout << s.lengthOfLastWord(input) << endl;
+  Solution s;
+  cout << s.strStr(haystack, needle) << endl;
+
   return 0;
 }
