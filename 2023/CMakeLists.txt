@@ -85,7 +85,7 @@ add_executable(T121 T121.cc)
 add_executable(T122 T122.cc)
 
 # add_executable (T122 T122.cc)
-# add_executable (T125 T125.cc)
+add_executable (T125 T125.cc)
 add_executable(T134 T134.cc)
 # add_executable (T141 T141.cc) add_executable
 add_executable(T169 T169.cc)
@@ -100,3 +100,6 @@ add_executable(T274 T274.cc)
 add_executable(T380 T380.cc)
 # add_executable (T442 T442.cc)
 # add_executable (T876 T876.cc)
+
+add_executable(T2866 T2866.cc)
+add_executable(T2828 T2828.cc)
