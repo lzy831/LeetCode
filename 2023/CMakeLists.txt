@@ -3,6 +3,8 @@ project(leekcode_2023)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -g -O0")
 include_directories(base)
 
+add_executable(TestCrash TestCrash.cc)
+
 # 初级算法 - 数组 add_executable(Array_1_removeDuplicates_T26
 # Array_1_removeDuplicates_T26.cc) add_executable(Array_3_rotate_T189
 # Array_3_rotate_T189.cc) add_executable(Array_4_containsDuplicate_T217
@@ -61,6 +63,7 @@ add_executable(T12 T12.cc)
 add_executable(T13 T13.cc)
 add_executable(T14 T14.cc)
 add_executable(T20 T20.cc)
+add_executable(T21 T21.cc)
 add_executable(T26 T26.cc)
 add_executable(T28 T28.cc)
 add_executable(T27 T27.cc)
@@ -85,24 +88,25 @@ add_executable(T121 T121.cc)
 add_executable(T122 T122.cc)
 
 # add_executable (T122 T122.cc)
-add_executable (T125 T125.cc)
+add_executable(T125 T125.cc)
 add_executable(T134 T134.cc)
-# add_executable (T141 T141.cc) add_executable
+add_executable(T141 T141.cc)
 add_executable(T169 T169.cc)
 add_executable(T162 T162.cc)
 add_executable(T189 T189.cc)
 add_executable(T191 T191.cc)
 
 # add_executable (T203 T203.cc)
-add_executable (T205 T205.cc)
+add_executable(T205 T205.cc)
 add_executable(T274 T274.cc)
+add_executable(T290 T290.cc)
 
 # add_executable (T206 T206.cc)
 add_executable(T380 T380.cc)
 add_executable(T383 T383.cc)
 add_executable(T392 T392.cc)
+
 # add_executable (T442 T442.cc)
 # add_executable (T876 T876.cc)
-
 add_executable(T2866 T2866.cc)
 add_executable(T2828 T2828.cc)
