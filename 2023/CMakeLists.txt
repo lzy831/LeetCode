@@ -5,14 +5,14 @@ include_directories(base)
 
 add_executable(TestCrash TestCrash.cc)
 
-# 初级算法 - 数组 add_executable(Array_1_removeDuplicates_T26
-# Array_1_removeDuplicates_T26.cc) add_executable(Array_3_rotate_T189
-# Array_3_rotate_T189.cc) add_executable(Array_4_containsDuplicate_T217
-# Array_4_containsDuplicate_T217.cc) add_executable(Array_5_singleNumber_T136
-# Array_5_singleNumber_T136.cc) add_executable(Array_7_plusOne_T66
-# Array_7_plusOne_T66.cc) add_executable(Array_8_moveZeroes_T283
-# Array_8_moveZeroes_T283.cc) add_executable(Array_10_rotateImage_T48
-# Array_10_rotateImage_T48.cc)
+# 初级算法 - 数组
+# add_executable(Array_1_removeDuplicates_T26 Array_1_removeDuplicates_T26.cc)
+# add_executable(Array_3_rotate_T189 Array_3_rotate_T189.cc)
+# add_executable(Array_4_containsDuplicate_T217 Array_4_containsDuplicate_T217.cc)
+# add_executable(Array_5_singleNumber_T136 Array_5_singleNumber_T136.cc)
+# add_executable(Array_7_plusOne_T66 Array_7_plusOne_T66.cc)
+# add_executable(Array_8_moveZeroes_T283 Array_8_moveZeroes_T283.cc)
+# add_executable(Array_10_rotateImage_T48 Array_10_rotateImage_T48.cc)
 
 # 初级算法 - 链表 add_executable(List_1_deleteNode_T237 List_1_deleteNode_T237.cc)
 # add_executable(List_2_removeNthFromEnd_T19 List_2_removeNthFromEnd_T19.cc)
@@ -56,7 +56,7 @@ add_executable(TestCrash TestCrash.cc)
 
 # 排序 add_executable(QuikSort QuikSort.cc)
 
-# add_executable (T1 T1.cc)
+add_executable (T1 T1.cc)
 # add_executable (T2 T2.cc)
 # add_executable (T9 T9.cc)
 add_executable(T12 T12.cc)
@@ -98,6 +98,7 @@ add_executable(T191 T191.cc)
 
 # add_executable (T203 T203.cc)
 add_executable(T205 T205.cc)
+add_executable(T242 T242.cc)
 add_executable(T274 T274.cc)
 add_executable(T290 T290.cc)
 
