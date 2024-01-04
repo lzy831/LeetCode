@@ -14,24 +14,29 @@ add_executable(TestCrash TestCrash.cc)
 # add_executable(Array_8_moveZeroes_T283 Array_8_moveZeroes_T283.cc)
 # add_executable(Array_10_rotateImage_T48 Array_10_rotateImage_T48.cc)
 
-# 初级算法 - 链表 add_executable(List_1_deleteNode_T237 List_1_deleteNode_T237.cc)
+# 初级算法 - 链表 
+# add_executable(List_1_deleteNode_T237 List_1_deleteNode_T237.cc)
 # add_executable(List_2_removeNthFromEnd_T19 List_2_removeNthFromEnd_T19.cc)
 # add_executable(List_4_mergeTwoLists_T21 List_4_mergeTwoLists_T21.cc)
 # add_executable(List_5_isPalindrome_T234 List_5_isPalindrome_T234.cc)
 
-# 初级算法 - 排序和搜索 add_executable(SortAndSearch_1_merge SortAndSearch_1_merge.cc)
+# 初级算法 - 排序和搜索 
+# add_executable(SortAndSearch_1_merge SortAndSearch_1_merge.cc)
 # add_executable(SortAndSearch_2_firstBadVersion
 # SortAndSearch_2_firstBadVersion.cc)
 
-# 初级算法 - 设计 add_executable(Design_2_minStack Design_2_minStack.cc)
+# 初级算法 - 设计 
+# add_executable(Design_2_minStack Design_2_minStack.cc)
 
-# 初级算法 - 字符串 add_executable(String_1_reverseString_T344
+# 初级算法 - 字符串 
+# add_executable(String_1_reverseString_T344
 # String_1_reverseString_T344.cc) add_executable(String_3_firstUniqChar_T387
 # String_3_firstUniqChar_T387.cc) add_executable(String_4_isAnagram_T242
 # String_4_isAnagram_T242.cc) add_executable(String_9_longestCommonPrefix_T14
 # String_9_longestCommonPrefix_T14.cc)
 
-# 初级算法 - 树 add_executable(Tree_1_maxDepth_T104 Tree_1_maxDepth_T104.cc)
+# 初级算法 - 树 
+# add_executable(Tree_1_maxDepth_T104 Tree_1_maxDepth_T104.cc)
 # add_executable(Tree_2_isValidBST_T98 Tree_2_isValidBST_T98.cc)
 # add_executable(Tree_3_isSymmetric_T101 Tree_3_isSymmetric_T101.cc)
 # add_executable(Tree_5_sortedArrayToBST_T108 Tree_5_sortedArrayToBST_T108.cc)
@@ -51,7 +56,8 @@ add_executable(TestCrash TestCrash.cc)
 # Other_5_isValid_T20.cc) add_executable(Other_6_missingNumber_T268
 # Other_6_missingNumber_T268.cc)
 
-# 初级算法 - 数学 add_executable(Math_1_FizzBuzz_T412 Math_1_FizzBuzz_T412.cc)
+# 初级算法 - 数学 
+# add_executable(Math_1_FizzBuzz_T412 Math_1_FizzBuzz_T412.cc)
 # add_executable(Math_2_countPrimes_T204 Math_2_countPrimes_T204.cc)
 
 # 排序 add_executable(QuikSort QuikSort.cc)
@@ -96,8 +102,10 @@ add_executable(T162 T162.cc)
 add_executable(T189 T189.cc)
 add_executable(T191 T191.cc)
 
+add_executable (T202 T202.cc)
 # add_executable (T203 T203.cc)
 add_executable(T205 T205.cc)
+add_executable(T219 T219.cc)
 add_executable(T242 T242.cc)
 add_executable(T274 T274.cc)
 add_executable(T290 T290.cc)
