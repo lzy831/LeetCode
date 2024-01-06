@@ -76,6 +76,7 @@ add_executable(T27 T27.cc)
 
 # add_executable (T28 T28.cc)
 add_executable(T42 T42.cc)
+add_executable(T49 T49.cc)
 add_executable(T55 T55.cc)
 add_executable(T58 T58.cc)
 
