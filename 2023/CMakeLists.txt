@@ -63,7 +63,7 @@ add_executable(TestCrash TestCrash.cc)
 # 排序 add_executable(QuikSort QuikSort.cc)
 
 add_executable (T1 T1.cc)
-# add_executable (T2 T2.cc)
+add_executable (T2 T2.cc)
 # add_executable (T9 T9.cc)
 add_executable(T12 T12.cc)
 add_executable(T13 T13.cc)
